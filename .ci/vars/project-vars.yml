@@ -1,0 +1,6 @@
+variables:
+  TridentWorkloadTypeShort: aiarchtemp # TODO: update with project short name
+  DeployLocation: westus
+  ProjectLocation: ai-architecture-template # TODO: update with repository name
+  PythonPath: ai-architecture-template # TODO: update with project root directory
+  Template: steps/ai-architecture-template.yml # TODO: update file name to project name
