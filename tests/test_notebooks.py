@@ -23,4 +23,6 @@ def test_00_aml_configuration():
                         workspace_region=workspace_region)
     )
 
-    assert results is not None
+    for cell in results.cells:
+        if cell.cell_type is "code":
+            assert not cell.metadata.papermill.exception, "Error in Python Notebook"
