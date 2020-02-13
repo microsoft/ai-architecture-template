@@ -18,7 +18,7 @@ def test_00_aml_configuration():
 
     results = pm.execute_notebook(
         '../notebooks/00_AMLConfiguration.ipynb',
-        '../notebooks/00_AMLConfiguration.ipynb_output',
+        '../notebooks/00_AMLConfiguration.output_ipynb',
         parameters=dict(subscription_id=subscription_id, resource_group=resource_group, workspace_name=workspace_name,
                         workspace_region=workspace_region)
     )

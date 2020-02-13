@@ -1,7 +1,7 @@
 
 # Project Configuration Files
 workspace_conf.yml
-*.ipynb_output
+*.output_ipynb
 .azureml
 pylint-results.xml
 
