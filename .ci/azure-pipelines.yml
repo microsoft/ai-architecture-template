@@ -35,9 +35,12 @@ pr:
   branches:
     include:
     - master
+    
+variables:
+- template: .ci/vars/ai-architecture-template.yml
 
 stages:
-- template: .ci/stages/deploy_notebooks_stages_v2.yml@aitemplates
+- template: .ci/stages/deploy_notebooks_stages_v4.yml@aitemplates
   parameters:
     Agent: $(Agent_Name)
     jobDisplayName: ai-architecture-template #TODO: Update with project name
