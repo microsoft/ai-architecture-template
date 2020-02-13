@@ -44,12 +44,11 @@ stages:
   parameters:
     Agent: $(Agent_Name)
     jobDisplayName: ai-architecture-template #TODO: Update with project name
-    DefaultWorkingDirectory: $(System.DefaultWorkingDirectory)
-    workload_vars: ../vars/ai-architecture-template.yml #TODO: Update with project name
-    flighting_release: false
-    flighting_preview: false
-    flighting_master: false
     TridentWorkloadTypeShort: ${{ variables.TridentWorkloadTypeShort }}
     DeployLocation: ${{ variables.DeployLocation }}
     Template: ${{ variables.Template }}
+    flighting_release: false
+    flighting_preview: false
+    flighting_master: false
+    
 
