@@ -7,6 +7,7 @@ dependencies:
   - jupyter
   - urllib3
   - pytest
+  - pytest-cov
   - pylint
   - pip:
     - azure-cli
