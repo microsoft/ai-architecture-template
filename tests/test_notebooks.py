@@ -9,6 +9,7 @@ from azure_utils.machine_learning.utils import load_configuration
 from junit_xml import TestSuite, TestCase
 
 
+
 def test_00_aml_configuration():
     cfg = load_configuration("../workspace_conf.yml")
 
