@@ -1,7 +1,7 @@
 
 # Project Configuration Files
 workspace_conf.yml
-*_Output.ipynb
+*.ipynb_output
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
