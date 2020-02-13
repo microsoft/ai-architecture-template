@@ -13,4 +13,4 @@ dependencies:
     - azureml-core
     - pylint-junit
     - junit-xml
-    - git+https://github.com/microsoft/AI-Utilities.git@version/0.2.0
+    - Microsoft-AI-Azure-Utilities==0.2.0
