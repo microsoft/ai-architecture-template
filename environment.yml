@@ -14,4 +14,3 @@ dependencies:
     - python-dotenv
     - azureml-core==1.0.57
     - git+https://github.com/microsoft/AI-Utilities.git@version/0.2.0
-=
