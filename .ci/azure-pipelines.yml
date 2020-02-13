@@ -37,7 +37,7 @@ pr:
     - master
     
 variables:
-- template: .ci/vars/ai-architecture-template.yml
+- template: ./vars/ai-architecture-template.yml
 
 stages:
 - template: .ci/stages/deploy_notebooks_stages_v4.yml@aitemplates
