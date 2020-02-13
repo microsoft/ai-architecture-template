@@ -5,13 +5,11 @@ dependencies:
   - python=3.6.2
   - pip
   - jupyter
-  - urllib3
   - pytest
   - pytest-cov
   - pylint
   - pip:
     - azure-cli
     - papermill
-    - python-dotenv
-    - azureml-core==1.0.57
+    - azureml-core
     - git+https://github.com/microsoft/AI-Utilities.git@version/0.2.0
