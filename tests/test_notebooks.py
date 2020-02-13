@@ -45,5 +45,5 @@ def test_00_aml_configuration():
 
         ts = TestSuite("my test suite", test_cases)
 
-        with open('timing-test-output.xml', 'w') as f:
+        with open('test-timing-output.xml', 'w') as f:
             TestSuite.to_file(f, [ts], prettyprint=False)
