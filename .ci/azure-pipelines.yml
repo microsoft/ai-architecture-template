@@ -49,4 +49,7 @@ stages:
     flighting_release: false
     flighting_preview: false
     flighting_master: false
+    TridentWorkloadTypeShort: ${{ variables.TridentWorkloadTypeShort }}
+    DeployLocation: ${{ variables.DeployLocation }}
+    Template: ${{ variables.Template }}
 
