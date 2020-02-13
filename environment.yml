@@ -9,7 +9,6 @@ dependencies:
   - pytest-cov
   - pylint
   - pip:
-    - azure-cli
     - papermill
     - azureml-core
     - pylint-junit
