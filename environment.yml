@@ -12,4 +12,4 @@ dependencies:
     - papermill
     - azureml-core
     - pylint-junit
-    - Microsoft-Azure-AI-Utilities==0.2.0
+    - Microsoft-AI-Azure-Utilities==0.2.0
