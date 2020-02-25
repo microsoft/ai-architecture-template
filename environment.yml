@@ -14,4 +14,4 @@ dependencies:
     - pytest-nunit
     - nbconvert
     - junit-xml
-    - Microsoft-AI-Azure-Utility-Samples==0.2.10
+    - Microsoft-AI-Azure-Utility-Samples
