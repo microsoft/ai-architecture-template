@@ -35,7 +35,7 @@ which addresses the first three prerequisites.
 To set up your environment to run these notebooks, please follow these steps.  They setup the notebooks to use Azure seamlessly.
 
 1. Fork this repo into your own Github Namespace or import this repo into Azure DevOps.
-1. Copy `sample_workspace_conf.yml` to a new file, `workspace_conf.yml`, and fill in each field. This will keep secrets out of the source code, and this file will be ignored by git.
+1. Copy `project_sample.yml` to a new file, `project.yml`, and fill in each field. This will keep secrets out of the source code, and this file will be ignored by git.
 1. Clone your repository locally, or on an Azure Data Science Virtual Machine.
    ```
    git clone https://github.com/[your_github_username]/ai-architecture-template.git
