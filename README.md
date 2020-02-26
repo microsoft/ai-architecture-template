@@ -40,13 +40,14 @@ provided within the pipeline.
 ## Run Locally
 To set up your environment to run this notebook, please follow these steps.  They setup the notebook to use Azure
 seamlessly.
-1. Clone your repository locally, or on an Azure Data Science Virtual Machine.
+1. First either create a new repo from the template, or create a fork of this repo.
+1. Clone your new repository locally, or on an Azure Data Science Virtual Machine.
    ```bash
-   git clone https://github.com/[your_github_username]/ai-architecture-template.git
+   git clone https://github.com/[your_github_username_or_org]/[your_project].git
    ```
 1. Enter the local repository:
    ```bash
-   cd ai-architecture-template
+   cd [your_project]
    ```
 1. Copy `project_sample.yml` to a new file, `project.yml`, you can fill in the fields now, or use the UI when running from the notebook. This will keep secrets out of the source code, and this file will be ignored by git.
    ```bash
