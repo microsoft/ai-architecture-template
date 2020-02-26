@@ -37,6 +37,9 @@ from the repository homepage.
 You may use the .ci/azure-pipeline.yml to configure a CI/CD build for your repostitory. Follow the directions
 provided within the pipeline.
 
+For details on the prerequistes please see [here](az-ml-realtime-score). With the Azure CLI installed, the following
+script can be used to create a new pipeline in your organizations Azure DevOps instance. 
+
    ```bash
    #!/usr/bin/env bash
    organization="<from dev.azure.com/[organization]>"
