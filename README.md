@@ -6,9 +6,6 @@
 ## Overview
 This template is meant to simplify creating new Azure ML based projects, with an easy to configure Azure DevOps CI/CD pipeline.
 
-## Design
-TODO: Insert Design Here
-
 ## Prerequisites
 1. [Anaconda Python](https://www.anaconda.com/download)
 1. [Docker](https://docs.docker.com/v17.12/install/linux/docker-ee/ubuntu) installed.
@@ -30,8 +27,11 @@ DSVM](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtu
 which addresses the first three prerequisites.
 
 ## Setup
+## Create new repository
 
-Select `Use This Template` to create a new repository based on this project.
+First either create a new repo from the template, or create a fork of this repo.
+You can use this template by selecting `Use This Template` to create a new repository based on this project 
+from the repository homepage.
 
 ## Set Up Azure DevOps Pipeline
 You may use the .ci/azure-pipeline.yml to configure a CI/CD build for your repostitory. Follow the directions
@@ -49,7 +49,9 @@ seamlessly.
    ```bash
    cd [your_project]
    ```
-1. Copy `project_sample.yml` to a new file, `project.yml`, you can fill in the fields now, or use the UI when running from the notebook. This will keep secrets out of the source code, and this file will be ignored by git.
+1. Copy `project_sample.yml` to a new file, `project.yml`, you can fill in the fields now,
+or use the UI when running from the notebook. This will keep secrets out of the source code, 
+and this file will be ignored by git.
    ```bash
    cp project_sample.yml project.yml
    ```
