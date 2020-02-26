@@ -1,12 +1,10 @@
-[![Build Status](https://dev.azure.com/AZGlobal/Azure%20Global%20CAT%20Engineering/_apis/build/status/AGCE%20AI/Happy%20Path%20Builds/ai-architecture-template?branchName=master)](https://dev.azure.com/AZGlobal/Azure%20Global%20CAT%20Engineering/_build/latest?definitionId=170&branchName=master)
-TODO: Insert Build Badge Here
-### Authors: <>
-### Acknowledgements: <>
+[![Build Status](https://dev.azure.com/AZGlobal/Azure%20Global%20CAT%20Engineering/_apis/build/status/AGCI%20AI/Happy%20Path%20Builds/ai-architecture-template?branchName=master)](https://dev.azure.com/AZGlobal/Azure%20Global%20CAT%20Engineering/_build/latest?definitionId=170&branchName=master)
+### Authors: Fidan Boylu Uz, Yan Zhang, Mario Bourgoin, Daniel Grecoe, Daniel Ciborowski
 
 # AI Architecture Template
 
 ## Overview
-TODO: Insert Overview Here
+This template is meant to simplify creating new Azure ML based projects, with an easy to configure Azure DevOps CI/CD pipeline.
 
 ## Design
 TODO: Insert Design Here
@@ -33,48 +31,54 @@ which addresses the first three prerequisites.
 
 ## Setup
 
-To set up your environment to run these notebooks, please follow these steps.  They setup the notebooks to use Azure
-seamlessly.
+Select `Use This Template` to create a new repository based on this project.
 
-1. Fork this repo into your own Github Namespace or import this repo into Azure DevOps.
-1. Copy `project_sample.yml` to a new file, `project.yml`, and fill in each field. This will keep secrets out of the 
-source code, and this file will be ignored by git.
+## Set Up Azure DevOps Pipeline
+You may use the .ci/azure-pipeline.yml to configure a CI/CD build for your repostitory. Follow the directions
+provided within the pipeline.
+
+## Run Locally
+To set up your environment to run this notebook, please follow these steps.  They setup the notebook to use Azure
+seamlessly.
 1. Clone your repository locally, or on an Azure Data Science Virtual Machine.
-   ```
+   ```bash
    git clone https://github.com/[your_github_username]/ai-architecture-template.git
    ```
 1. Enter the local repository:
-   ```
+   ```bash
    cd ai-architecture-template
    ```
-1. Create the Python ai-architecture-template virtual environment using the environment.yml:
+1. Copy `project_sample.yml` to a new file, `project.yml`, you can fill in the fields now, or use the UI when running from the notebook. This will keep secrets out of the source code, and this file will be ignored by git.
+   ```bash
+   cp project_sample.yml project.yml
    ```
+1. Create the Python ai-architecture-template virtual environment using the environment.yml:
+   ```bash
    conda env create -f environment.yml
    ```
 1. Activate the virtual environment:
-   ```
+   ```bash
    source activate ai-architecture-template
    ```
    The remaining steps should be done in this virtual environment.
 1. Login to Azure:
-   ```
+   ```bash
    az login
    ```
    You can verify that you are logged in to your subscription by executing
    the command:
-   ```
+   ```bash
    az account show -o table
    ```
 1. If you have more than one Azure subscription, select it:
-   ```
+   ```bash
    az account set --subscription <Your Azure Subscription>
    ```
 1. Start the Jupyter notebook server:
-	```
-	jupyter notebook
-	
-You may also use the .ci/azure-pipeline.yml to configure a CI/CD build for your repostitory. Follow the directions
-provided within the pipeline.
+   ```bash
+   jupyter notebook
+   ```
+
 
 # Contributing
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
