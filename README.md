@@ -37,6 +37,29 @@ from the repository homepage.
 You may use the .ci/azure-pipeline.yml to configure a CI/CD build for your repostitory. Follow the directions
 provided within the pipeline.
 
+   ```bash
+   #!/usr/bin/env bash
+   organization="<from dev.azure.com/[organization]>"
+   project="<from dev.azure.com/organization/[project]>"
+   service_connection="<Name Of New or Existing Service Connection>"
+   name="<pipeline name>"
+   repository="[github org]/[github repoistory name]"
+
+   az extension add --name azure-devops
+
+   az devops configure --defaults organization=https://dev.azure.com/$organization project="$project"
+
+   az login
+
+   az pipelines create --name $name            \
+     --description ''                          \
+     --repository $repository                  \
+     --branch master                           \
+     --repository-type github                  \
+     --yml-path .ci/azure-pipelines-v2.yml     \
+     --service-connection $service_connection
+  ```
+
 ## Run Locally
 To set up your environment to run this notebook, please follow these steps.  They setup the notebook to use Azure
 seamlessly.
