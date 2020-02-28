@@ -4,14 +4,5 @@ channels:
 dependencies:
   - python=3.6.2
   - pip
-  - jupyter
-  - pytest
-  - pytest-cov
-  - pylint
   - pip:
-    - papermill
-    - pylint-junit
-    - pytest-nunit
-    - nbconvert
-    - junit-xml
     - Microsoft-AI-Azure-Utility-Samples
