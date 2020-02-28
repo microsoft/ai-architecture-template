@@ -14,3 +14,15 @@ jobs:
       with:
         # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
         creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Create Azure ML Workspace
+      uses: dciborow/ml-workspace@0.0.0
+      with:
+        # Azure Subscription Id
+        subscription_id: ${{ secrets.subscription_id }}
+        # Azure Resource Group Name
+        resource_group: ${{ secrets.resource_group }}
+        # Azure ML Workspace Name
+        workspace_name: ${{ secrets.workspace_name }}
+        # Azure ML Workspace Region
+        workspace_region: ${{ secrets.workspace_region }}
